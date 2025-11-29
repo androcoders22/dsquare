@@ -1,0 +1,33 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 28 Nov 2025 16:34:44 at https://theblackpearlspro.com/go-arch-demo/demo/light/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://theblackpearlspro.com/go-arch-demo/demo/light/index.html -O1 "C:\My Web Sites\go arch" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/Popover requires tooltip.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/bootstrap.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/TweenLite.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.tools.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/TweenLite.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.tools.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/Version/ (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.tools.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/themepunch.revolution.min.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.revolution.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/jquery.themepunch.revolution.min.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.revolution.min.js)
+16:36:02	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/jquery.themepunch.revolution.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/jquery.themepunch.revolution.min.js)
+16:36:02	Warning: 	Retry after error 504 (Gateway Time-out) at link https://secure-a.vimeocdn.com/js/froogaloop2.min.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/revolution.extension.video.min.js)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/fonts/revicons/revicons.eot?5510888 (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/fonts/revicons/revicons.woff?5510888 (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/fonts/revicons/revicons.ttf?5510888 (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/fonts/revicons/revicons.svg?5510888 (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/css/openhand.cur (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/css/closedhand.cur (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/gridtile.png (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/gridtile_white.png (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/gridtile_3x3.png (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/gridtile_3x3_white.png (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/coloredbg.png (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Error: 	"Not Found" (404) at link https://theblackpearlspro.com/go-arch-demo/demo/light/assets/loader.gif (from https://theblackpearlspro.com/go-arch-demo/demo/light/css/settings.css)
+16:36:03	Warning: 	Retry after error 504 () at link https://secure-a.vimeocdn.com/js/froogaloop2.min.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/revolution.extension.video.min.js)
+16:36:03	Error: 	"" (504) after 2 retries at link https://secure-a.vimeocdn.com/js/froogaloop2.min.js (from https://theblackpearlspro.com/go-arch-demo/demo/light/js/rev-slider/revolution.extension.video.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 19 seconds : 123 links scanned, 100 files written (15225552 bytes overall) [14028503 bytes received at 177575 bytes/sec], 3384896 bytes transferred using HTTP compression in 70 files, ratio 30%, 12.1 requests per connection
+(20 errors, 2 warnings, 0 messages)
