@@ -56,7 +56,7 @@
 
 	navbarDesctop.affix({
 	  offset: {
-	    top: 200
+	    top: 0
 	  }
 	});
 

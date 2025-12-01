@@ -790,16 +790,18 @@ label.error{
 
 .navbar-desctop{
   display: none;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 5;
   top:0;
   left:0;
   width: 100%;
-  padding:5.9vmin 0 0;
+  padding: 1.3em 0 0;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 0 35px rgba(0,0,0,0.1);
 }
 
 .navbar-desctop .brand{
-  display: none;
+  display: inline-block;
   position: relative;
   float:left;
   top:-0.22em;
@@ -825,7 +827,7 @@ label.error{
 .navbar-desctop-menu li a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-desctop-menu li a:hover,
@@ -839,7 +841,7 @@ label.error{
 }
 
 .navbar-desctop-menu > li > a{
-  color: #fff;
+  color: #000;
   background-color: transparent;
   margin-bottom: 1.5em;
 }
@@ -889,21 +891,16 @@ label.error{
 
 
 
-/* 2.4 Navbar Desctop Affix */
-
+/* 2.4 Navbar Desctop Affix - Now always visible */
 
 
 .navbar-desctop.affix{
   position: fixed;
   z-index: 5;
   top:0;
-  background-color:rgba(255,255,255,0.95);
-  padding:1.3em 0 0;
+  background-color: rgba(255,255,255,0.95);
+  padding: 1.3em 0 0;
   box-shadow: 0 0 35px rgba(0,0,0,0.1);
-}
-
-.navbar-desctop.affix.affix-top{
-  padding-top:2.2em;
 }
 
 .navbar-desctop.affix .brand{
