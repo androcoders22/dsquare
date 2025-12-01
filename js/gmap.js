@@ -8,177 +8,42 @@ function initialize() {
         zoom: 16, // Change zoom here
         center: mapLocation,
         scrollwheel: false,
-        styles: [
-            {
-                "featureType": "all",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "saturation": 36
-                    },
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 40
-                    }
-                ]
-            },
-            {
-                "featureType": "all",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "visibility": "on"
-                    },
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 16
-                    }
-                ]
-            },
-            {
-                "featureType": "all",
-                "elementType": "labels.icon",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 20
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 17
-                    },
-                    {
-                        "weight": 1.2
-                    }
-                ]
-            },
-            {
-                "featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 20
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 21
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 17
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 29
-                    },
-                    {
-                        "weight": 0.2
-                    }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 18
-                    }
-                ]
-            },
-            {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 16
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 19
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#000000"
-                    },
-                    {
-                        "lightness": 17
-                    }
-                ]
-            }
-        ]
+        // We'll register a named StyledMapType below and use it as the default.
+        styles: []
     };
     
     map = new google.maps.Map(document.getElementById('map'),
     mapOptions);
+
+        // Define a themed style (earthy / desaturated) and register as a StyledMapType
+        var themeStyles = [
+            { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "color": "#2b2b2b" }, { "saturation": -20 }] },
+            { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#e9ece4" }] },
+            { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#d9e8d3" }] },
+            { "featureType": "road", "elementType": "geometry", "stylers": [{ "color": "#d8cbb6" }] },
+            { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7a6a57" }] },
+            { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#bfe3ff" }, { "lightness": -10 }] },
+            { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#cfc8bd" }] }
+        ];
+
+        var styledMapType = new google.maps.StyledMapType(themeStyles, { name: 'DSQUARE' });
+        map.mapTypes.set('dsquare_style', styledMapType);
+        // Add map controls to match theme: horizontal map/satellite at top-left
+        map.setOptions({
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                mapTypeIds: ['dsquare_style', google.maps.MapTypeId.SATELLITE],
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                position: google.maps.ControlPosition.TOP_LEFT
+            },
+            fullscreenControl: true,
+            streetViewControl: false,
+            zoomControl: true,
+            zoomControlOptions: { position: google.maps.ControlPosition.LEFT_CENTER }
+        });
+
+        // Set the styled map as the default
+        map.setMapTypeId('dsquare_style');
     
     
         // address details (update as needed)
