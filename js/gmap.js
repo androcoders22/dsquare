@@ -185,7 +185,7 @@ function initialize() {
     + '<div class="map-title">' 
     + '<h3><img
               style="width: 80px"
-              src="img/d-square-logo-transparent.png"
+              src="img/d2horizontal.png"
               alt="dsquare"
             /></h3></div>' 
     + '<div class="map-address-row"><i class="fa fa-map-marker"></i><span class="text">USA, New York<br> 648 Ivah Street Apt. 375</span></div><div class="map-address-row"><i class="fa fa-phone"></i><span class="text">+0 543 554 44-25</span></div><div class="map-address-row"><span class="map-email"><i class="fa fa-envelope"></i><span class="text">go.arch@mail.com</span></span>' 
